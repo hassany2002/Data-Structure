@@ -39,7 +39,7 @@ The Python folder contains implementations of:
 * [Binary Tree](https://github.com/hassany2002/data-structure/blob/main/datastructure%20py/BineryTree.py)
 * [Binary Search Tree](https://github.com/hassany2002/data-structure/blob/main/datastructure%20py/BinerySearchTree.py)
 
-## ☕ Java
+##  Java
 
 The Java folder contains implementations of the same main data structures, with an additional:
 
@@ -83,3 +83,44 @@ Possible additions include:
 ---
 
 **Languages:** Python  | Java 
+
+
+# examples
+1- python stack
+        s = Stack()
+        s.push(5)
+        s.push(15)
+        s.push(30)
+        s.push(50)
+        s.display()
+        print(" ----------------------------------  ")
+        print("The top element is: " + str(s.top()))
+        print(" ----------------------------------  ")
+        print("The pop element is: " + str(s.pop()))
+        s.display()
+        print(" ----------------------------------  ")
+        print("The size is: " + str(s.size()))
+
+2- java BinerySearchTree
+        BinerySearchTree q = new BinerySearchTree();
+        q.Insert(5);
+        q.Insert(3);
+        q.Insert(7);
+        q.Insert(9);
+        q.Insert(1);
+        q.Insert(9);
+        System.out.println( "---------------------------------- ");
+        System.out.println(q.count +" count ");
+        System.out.println( "---------------------------------- ");
+        q.traverse_inorder(q.root);
+        System.out.println( " ----------------------------------");
+        q.traversepreorder(q.root);
+        System.out.println( "---------------------------------- ");
+        q.traversepostorder(q.root);
+        System.out.println( " ----------------------------------");
+        q.traverselevelorder(q.root);
+        System.out.println( "---------------------------------- ");
+        q.remove(9);
+        System.out.println(q.count+" count ");
+        System.out.println( " ---------------------------------- ");
+        q.traverse_inorder(q.root);
